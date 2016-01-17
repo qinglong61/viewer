@@ -21,10 +21,11 @@ app.on('ready', function() {
   mainWindow = new BrowserWindow({width: 800, height: 600});
 
   // 加载应用的 index.html
-  mainWindow.loadURL('file://' + __dirname + '/index.html');
+  // mainWindow.loadURL('file://' + __dirname + '/index.html');
+  mainWindow.loadURL('http://www.baidu.com');
 
   // 打开开发工具
-  mainWindow.openDevTools();
+  // mainWindow.openDevTools();
 
   // 当 window 被关闭，这个事件会被发出
   mainWindow.on('closed', function() {
